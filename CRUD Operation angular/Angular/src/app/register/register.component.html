@@ -1,0 +1,36 @@
+<h3>Registration Form</h3>
+<form [formGroup]="form" #registerform (ngSubmit)="register(registerform)">
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-6">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Partner Name</label> <input
+          type="text" class="form-control" formControlName="partnerName" 
+          aria-describedby="emailHelp" placeholder="Enter Name">
+        <!--  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+      </div>
+    </div>  
+    <div class="col-sm-2"></div>
+</div>
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-6">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Partner Email</label> <input
+          type="text" class="form-control" 
+          aria-describedby="emailHelp" placeholder="Enter Email" formControlName="partnerEmail">
+        <!--  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+      </div>
+    </div>  
+    <div class="col-sm-2"></div>
+</div>
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-6">
+      <div class="form-group">
+        <button class="btn btn-primary">Submit</button>
+      </div>
+    </div>  
+    <div class="col-sm-2"></div>
+</div>
+</form>

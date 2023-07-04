@@ -1,0 +1,27 @@
+ <div class="panel panel-default">
+  <div class="panel-heading">
+      <h1>Partners</h1>
+  </div>
+  <div class="panel-body">
+      <table datatable [dtOptions]="dtOptions"
+      [dtTrigger]="dtTrigger"   class="row-border hover" >
+          <thead>
+              <tr>
+                  <th>Partner Name</th>
+                  <th>Partner Email</th>
+                  <th>Partner Email</th>
+                  
+              </tr>
+          </thead>
+          <tbody>
+              <tr *ngFor="let partner of partners ">
+                  <td>{{partner.partnerName}}</td>
+                  <td>{{partner.partnerEmail}}</td>
+                  <td><button (click)="deletePartner(partner.id)" class='btn btn-primary'>Delete</button></td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+</div> 
+
+
